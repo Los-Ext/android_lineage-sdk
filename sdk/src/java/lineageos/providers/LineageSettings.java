@@ -992,20 +992,21 @@ public final class LineageSettings {
 
         /** @hide */
         public static final Validator STATUS_BAR_BATTERY_STYLE_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 2);
+                new InclusiveIntegerRangeValidator(0, 6);
 
         /**
          * Status bar battery %
          * 0: Hide the battery percentage
          * 1: Display the battery percentage inside the icon
          * 2: Display the battery percentage next to the icon
+         * 3: Display the battery percentage to the left of the icon
          */
         public static final String STATUS_BAR_SHOW_BATTERY_PERCENT =
                 "status_bar_show_battery_percent";
 
         /** @hide */
         public static final Validator STATUS_BAR_SHOW_BATTERY_PERCENT_VALIDATOR =
-                new InclusiveIntegerRangeValidator(0, 2);
+                new InclusiveIntegerRangeValidator(0, 3);
 
         /**
          * Whether the phone ringtone should be played in an increasing manner
